@@ -42,13 +42,13 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  F1 |  F2  |  F3  |  F4  |  F5  |           |  F6  |  F7  |  F8  |  F9  |  F10  |  F11  |
-// | SHFT |    |    |    |    |    |                    |  left  |  down  |  up  |  right  |   |  F12  |
-// | LCTRL|    | HOME  |  END  |  PGUP  |  PGDN  |      |  play_ag  |  skip  |  play_pause   |  mute  |  inc  | dec  |
+// |  ESC |  F1 |  F2  |  F3  |  F4  |  F5  |      | F6   |  F7   |  F8  | F9   | F10 |  F11 |
+// | SHFT | BT1 | BT2  | BT3  | BT4  | BTCLR|      | left | down  |  up  | right|     |  F12 |
+// | LCTRL|     | HOME |  END | PGUP | PGDN |      | PREV | PlayP | SKIP | mute | inc | dec  |
 //                    | GUI | CMD |  ENT   |                        |  | SPACE| BSPC|
                         bindings = <
    &kp ESC   &kp F1   &kp F2 &kp F3   &kp F4  &kp F5            &kp F6     &kp F7    &kp F8  &kp F9 &kp F10 &kp F11
-   &kp LSHFT  &trans   &kp N2 &kp N3   &kp N4  &kp N5            &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT &kp N0 &kp F12
+   &kp LSHFT &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_CLR    &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT &kp N0 &kp F12
    &kp LCTRL &trans  &kp HOME &kp END &kp PG_UP &kp PG_DN       &kp C_PREV &kp C_PP  &kp C_NEXT &kp C_MUTE  &kp C_VOL_DN &kp C_VOL_UP
                         &kp LALT &kp LGUI &kp RET               &trans     &kp SPACE &kp BSPC
                         >;
